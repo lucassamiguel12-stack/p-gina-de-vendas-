@@ -1,6 +1,5 @@
 /* =========================================
-   CASH IN MOTION
-   ESTILO PRINCIPAL
+   RESET
 ========================================= */
 
 * {
@@ -10,17 +9,37 @@
 }
 
 html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 body {
-    background: #0b0b0b;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+
+    overflow-x: hidden;
+
+    background: #080808;
     color: #f5f5f5;
-    font-family: Arial, Helvetica, sans-serif;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        Helvetica,
+        sans-serif;
+
     line-height: 1.6;
+
+    -webkit-text-size-adjust: 100%;
 }
 
 img {
+    display: block;
     max-width: 100%;
 }
 
@@ -36,8 +55,12 @@ a {
 .page {
     width: 100%;
     max-width: 520px;
+
     margin: 0 auto;
-    padding: 35px 18px 50px;
+
+    padding: 34px 16px 45px;
+
+    overflow: hidden;
 }
 
 
@@ -46,33 +69,42 @@ a {
 ========================================= */
 
 .profile {
+    width: 100%;
+
     text-align: center;
-    margin-bottom: 35px;
+
+    margin-bottom: 34px;
 }
 
 .avatar {
-    width: 92px;
-    height: 92px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto 15px;
+    width: 90px;
+    height: 90px;
 
-    border: 3px solid #f5a623;
+    margin: 0 auto 14px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 2px solid #f5a623;
 
     box-shadow:
-        0 0 0 5px rgba(245, 166, 35, 0.08);
+        0 0 0 5px rgba(245, 166, 35, 0.07),
+        0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .profile h1 {
-    font-size: 24px;
-    font-weight: 800;
     color: #ffffff;
-    margin-bottom: 5px;
+
+    font-size: 23px;
+    font-weight: 800;
+
+    margin-bottom: 3px;
 }
 
 .profile p {
-    color: #999999;
+    color: #8e8e8e;
+
     font-size: 14px;
 }
 
@@ -82,7 +114,10 @@ a {
 ========================================= */
 
 .hero {
+    width: 100%;
+
     text-align: center;
+
     margin-bottom: 30px;
 }
 
@@ -90,55 +125,69 @@ a {
     display: inline-block;
 
     padding: 7px 14px;
-    margin-bottom: 17px;
+
+    margin-bottom: 16px;
 
     border: 1px solid rgba(245, 166, 35, 0.35);
+
     border-radius: 30px;
 
-    color: #f5a623;
-    background: rgba(245, 166, 35, 0.07);
+    background: rgba(245, 166, 35, 0.06);
 
-    font-size: 12px;
+    color: #f5a623;
+
+    font-size: 11px;
     font-weight: 800;
-    letter-spacing: 0.8px;
+
+    letter-spacing: 1px;
 }
 
 .hero h2 {
+    width: 100%;
+
     color: #ffffff;
 
-    font-size: 32px;
+    font-size: 31px;
+    font-weight: 800;
+
     line-height: 1.12;
 
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 
 .hero p {
-    max-width: 430px;
+    max-width: 420px;
+
     margin: 0 auto;
 
-    color: #a7a7a7;
+    color: #999999;
+
     font-size: 15px;
+
+    line-height: 1.6;
 }
 
 
 /* =========================================
-   CARD DO PRODUTO
+   CARDS
 ========================================= */
 
 .product-card {
     width: 100%;
-
-    background: #141414;
-
-    border: 1px solid #292929;
-    border-radius: 20px;
+    max-width: 100%;
 
     overflow: hidden;
 
-    margin-bottom: 18px;
+    background: #121212;
+
+    border: 1px solid #292929;
+
+    border-radius: 20px;
+
+    margin-bottom: 16px;
 
     box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.35);
+        0 18px 45px rgba(0, 0, 0, 0.35);
 }
 
 
@@ -148,14 +197,22 @@ a {
 
 .product-image {
     width: 100%;
-    background: #101010;
+    max-width: 100%;
+
+    overflow: hidden;
+
+    background: #0d0d0d;
 }
 
 .product-image img {
+    display: block;
+
     width: 100%;
+    max-width: 100%;
+
     height: auto;
 
-    display: block;
+    object-fit: contain;
 }
 
 
@@ -164,7 +221,9 @@ a {
 ========================================= */
 
 .product-info {
-    padding: 24px 22px 26px;
+    width: 100%;
+
+    padding: 23px 20px 25px;
 }
 
 .product-info small {
@@ -177,25 +236,28 @@ a {
 
     letter-spacing: 1.5px;
 
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 .product-info h3 {
     color: #ffffff;
 
     font-size: 25px;
+    font-weight: 800;
+
     line-height: 1.2;
 
     margin-bottom: 12px;
 }
 
 .product-info p {
-    color: #aaa;
+    color: #a9a9a9;
 
     font-size: 15px;
+
     line-height: 1.65;
 
-    margin-bottom: 18px;
+    margin-bottom: 17px;
 }
 
 
@@ -206,25 +268,28 @@ a {
 .price {
     color: #ffffff;
 
-    font-size: 27px;
+    font-size: 28px;
     font-weight: 900;
 
-    margin: 18px 0;
+    line-height: 1.2;
+
+    margin: 20px 0;
 }
 
 
 /* =========================================
-   BOTÃO PRINCIPAL
+   BOTÃO
 ========================================= */
 
 .cta {
     display: block;
 
     width: 100%;
+    max-width: 100%;
 
-    padding: 15px 18px;
+    padding: 16px 14px;
 
-    border-radius: 12px;
+    border-radius: 13px;
 
     background: #f5a623;
 
@@ -235,16 +300,21 @@ a {
     font-size: 14px;
     font-weight: 900;
 
-    transition: 0.25s ease;
+    white-space: nowrap;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .cta:hover {
-    background: #ffb63d;
+    background: #ffb638;
 
     transform: translateY(-2px);
 
     box-shadow:
-        0 8px 25px rgba(245, 166, 35, 0.20);
+        0 10px 25px rgba(245, 166, 35, 0.18);
 }
 
 .cta:active {
@@ -257,18 +327,20 @@ a {
 ========================================= */
 
 .notice {
+    width: 100%;
+
     text-align: center;
 
-    color: #777;
+    color: #707070;
 
     font-size: 12px;
 
-    margin: 8px 0 28px;
+    margin: 7px 0 28px;
 }
 
 
 /* =========================================
-   CRIAÇÃO DE SITES
+   SERVIÇO DE SITES
 ========================================= */
 
 .site-service {
@@ -277,58 +349,62 @@ a {
     background:
         linear-gradient(
             145deg,
-            #121212,
-            #0d0d0d
+            #10141d,
+            #0c0f15
         );
 
-    border: 1px solid rgba(245, 166, 35, 0.30);
+    border: 1px solid rgba(0, 132, 255, 0.45);
 
     box-shadow:
-        0 15px 45px rgba(0, 0, 0, 0.45);
+        0 18px 50px rgba(0, 0, 0, 0.45);
 }
 
 
 /* =========================================
-   IMAGEM DA CRIAÇÃO DE SITES
+   IMAGEM DO SERVIÇO
 ========================================= */
 
 .site-service-image {
     width: 100%;
-
-    background: #080808;
+    max-width: 100%;
 
     overflow: hidden;
+
+    background: #05080d;
 }
 
 .site-service-image img {
     display: block;
 
     width: 100%;
+    max-width: 100%;
+
     height: auto;
 
-    object-fit: cover;
+    object-fit: contain;
 }
 
 
 /* =========================================
-   INFORMAÇÕES DO SERVIÇO
+   TEXTO DO SERVIÇO
 ========================================= */
 
 .site-service .product-info {
-    padding: 24px 22px 27px;
+    padding: 23px 20px 27px;
 }
 
 .site-service small {
-    color: #f5a623;
+    color: #00a8ff;
 }
 
 .site-service h3 {
     font-size: 27px;
+
     margin-bottom: 12px;
 }
 
 .site-service p {
-    color: #b0b0b0;
+    color: #b3bac7;
 }
 
 
@@ -339,24 +415,23 @@ a {
 .site-benefits {
     list-style: none;
 
+    width: 100%;
+
+    margin: 18px 0 5px;
+
     padding: 0;
-    margin: 20px 0 5px;
 }
 
 .site-benefits li {
-    color: #e5e5e5;
+    color: #e8e8e8;
 
-    font-size: 14px;
+    font-size: 15px;
 
-    margin: 11px 0;
+    line-height: 1.5;
 
-    position: relative;
+    margin: 10px 0;
 
-    padding-left: 2px;
-}
-
-.site-benefits li::first-letter {
-    color: #f5a623;
+    padding-left: 0;
 }
 
 
@@ -365,60 +440,90 @@ a {
 ========================================= */
 
 .site-service .price {
+    color: #ffffff;
+
     font-size: 28px;
+
+    margin-top: 21px;
+}
+
+
+/* =========================================
+   BOTÃO WHATSAPP
+========================================= */
+
+.whatsapp-button {
+    background:
+        linear-gradient(
+            90deg,
+            #007cff,
+            #00a8ff
+        );
 
     color: #ffffff;
 
-    margin-top: 20px;
+    box-shadow:
+        0 8px 25px rgba(0, 132, 255, 0.18);
+}
+
+.whatsapp-button:hover {
+    background:
+        linear-gradient(
+            90deg,
+            #0088ff,
+            #14b5ff
+        );
 }
 
 
 /* =========================================
-   BOTÃO DO SERVIÇO
+   FOOTER
 ========================================= */
 
-.site-service .cta {
-    background: #f5a623;
+footer {
+    text-align: center;
 
-    color: #111111;
+    padding-top: 28px;
 }
 
-.site-service .cta:hover {
-    background: #ffb63d;
+footer p {
+    color: #555555;
+
+    font-size: 11px;
 }
 
 
 /* =========================================
-   EFEITO NO CARD DE SERVIÇO
+   TABLET / DESKTOP
 ========================================= */
 
-.site-service::before {
-    content: "";
+@media (min-width: 601px) {
 
-    position: absolute;
+    .page {
+        padding-top: 45px;
+    }
 
-    width: 180px;
-    height: 180px;
+    .hero h2 {
+        font-size: 34px;
+    }
 
-    top: -100px;
-    right: -80px;
-
-    background: rgba(245, 166, 35, 0.07);
-
-    border-radius: 50%;
-
-    pointer-events: none;
 }
 
 
 /* =========================================
-   RESPONSIVO
+   CELULAR
 ========================================= */
 
 @media (max-width: 600px) {
 
     .page {
-        padding: 28px 15px 45px;
+        width: 100%;
+        max-width: 100%;
+
+        padding:
+            28px
+            14px
+            45px;
     }
 
     .profile {
@@ -426,16 +531,20 @@ a {
     }
 
     .avatar {
-        width: 86px;
-        height: 86px;
+        width: 84px;
+        height: 84px;
     }
 
     .profile h1 {
-        font-size: 22px;
+        font-size: 21px;
+    }
+
+    .profile p {
+        font-size: 13px;
     }
 
     .hero h2 {
-        font-size: 29px;
+        font-size: 28px;
     }
 
     .hero p {
@@ -447,7 +556,10 @@ a {
     }
 
     .product-info {
-        padding: 22px 18px 24px;
+        padding:
+            21px
+            18px
+            24px;
     }
 
     .product-info h3 {
@@ -459,15 +571,11 @@ a {
     }
 
     .price {
-        font-size: 25px;
-    }
-
-    .site-service .product-info {
-        padding: 22px 18px 25px;
+        font-size: 26px;
     }
 
     .site-service h3 {
-        font-size: 24px;
+        font-size: 25px;
     }
 
     .site-benefits li {
@@ -477,6 +585,7 @@ a {
     .site-service .price {
         font-size: 26px;
     }
+
 }
 
 
@@ -484,7 +593,7 @@ a {
    CELULARES PEQUENOS
 ========================================= */
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
 
     .page {
         padding-left: 12px;
@@ -492,7 +601,7 @@ a {
     }
 
     .hero h2 {
-        font-size: 27px;
+        font-size: 26px;
     }
 
     .product-info h3 {
@@ -502,4 +611,34 @@ a {
     .site-service h3 {
         font-size: 23px;
     }
+
+    .cta {
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================================
+   CORREÇÃO EXTRA PARA INSTAGRAM
+========================================= */
+
+@media (max-width: 600px) {
+
+    html,
+    body,
+    .page,
+    .product-card,
+    .product-image,
+    .site-service-image,
+    .product-info {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
 }
