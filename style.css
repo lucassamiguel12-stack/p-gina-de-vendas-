@@ -1,346 +1,505 @@
+/* =========================================
+   CASH IN MOTION
+   ESTILO PRINCIPAL
+========================================= */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-:root {
-  --fundo: #05070d;
-  --azul: #087cff;
-  --azul-claro: #12c8ff;
-  --branco: #f5f8ff;
-  --cinza: #a9b5c9;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-  min-height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--branco);
-
-  background:
-    radial-gradient(
-      circle at 50% 0%,
-      rgba(0, 111, 255, 0.28),
-      transparent 35%
-    ),
-    var(--fundo);
+    background: #0b0b0b;
+    color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
 }
 
-/* CONTAINER PRINCIPAL */
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================
+   PÁGINA
+========================================= */
 
 .page {
-  width: 100%;
-  max-width: 560px;
-  margin: 0 auto;
-  padding: 40px 18px;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 35px 18px 50px;
 }
 
 
-/* PERFIL */
+/* =========================================
+   PERFIL
+========================================= */
 
 .profile {
-  text-align: center;
+    text-align: center;
+    margin-bottom: 35px;
 }
 
 .avatar {
-  width: 110px;
-  height: 110px;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
 
-  object-fit: cover;
+    border: 3px solid #f5a623;
 
-  border-radius: 50%;
-  border: 3px solid var(--azul);
-
-  box-shadow:
-    0 0 20px rgba(0, 124, 255, 0.6);
+    box-shadow:
+        0 0 0 5px rgba(245, 166, 35, 0.08);
 }
 
 .profile h1 {
-  margin-top: 15px;
-
-  font-size: 22px;
-  font-weight: 700;
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 5px;
 }
 
 .profile p {
-  margin-top: 6px;
-
-  color: var(--cinza);
-  font-size: 14px;
+    color: #999999;
+    font-size: 14px;
 }
 
 
-/* APRESENTAÇÃO */
+/* =========================================
+   HERO
+========================================= */
 
 .hero {
-  text-align: center;
-
-  margin-top: 35px;
-  margin-bottom: 25px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .badge {
-  display: inline-block;
+    display: inline-block;
 
-  padding: 7px 12px;
+    padding: 7px 14px;
+    margin-bottom: 17px;
 
-  border-radius: 50px;
+    border: 1px solid rgba(245, 166, 35, 0.35);
+    border-radius: 30px;
 
-  border: 1px solid rgba(18, 200, 255, 0.4);
+    color: #f5a623;
+    background: rgba(245, 166, 35, 0.07);
 
-  background: rgba(18, 200, 255, 0.08);
-
-  color: var(--azul-claro);
-
-  font-size: 11px;
-  font-weight: bold;
-  letter-spacing: 0.8px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
 }
 
 .hero h2 {
-  margin-top: 15px;
+    color: #ffffff;
 
-  font-size: 34px;
-  line-height: 1.1;
+    font-size: 32px;
+    line-height: 1.12;
+
+    margin-bottom: 15px;
 }
 
 .hero p {
-  margin-top: 12px;
+    max-width: 430px;
+    margin: 0 auto;
 
-  color: var(--cinza);
-
-  font-size: 15px;
-  line-height: 1.5;
+    color: #a7a7a7;
+    font-size: 15px;
 }
 
 
-/* CARD DO PRODUTO */
+/* =========================================
+   CARD DO PRODUTO
+========================================= */
 
 .product-card {
-  padding: 15px;
+    width: 100%;
 
-  border-radius: 24px;
+    background: #141414;
 
-  border: 1px solid rgba(55, 145, 255, 0.3);
+    border: 1px solid #292929;
+    border-radius: 20px;
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(12, 25, 47, 0.95),
-      rgba(5, 10, 20, 0.95)
-    );
+    overflow: hidden;
 
-  box-shadow:
-    0 20px 50px rgba(0, 55, 150, 0.2);
+    margin-bottom: 18px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.35);
 }
 
 
-/* IMAGEM DO PRODUTO */
+/* =========================================
+   IMAGEM DO PRODUTO
+========================================= */
 
 .product-image {
-  min-height: 230px;
-
-  display: flex;
-
-  flex-direction: column;
-
-  justify-content: center;
-
-  align-items: center;
-
-  text-align: center;
-
-  border-radius: 18px;
-
-  border: 1px solid rgba(0, 142, 255, 0.4);
-
-  background:
-    radial-gradient(
-      circle at 50% 30%,
-      rgba(0, 153, 255, 0.4),
-      transparent 35%
-    ),
-    linear-gradient(
-      145deg,
-      #02050a,
-      #061a3a
-    );
-}
-
-.product-glow {
-  margin-bottom: 15px;
-
-  padding: 6px 10px;
-
-  border-radius: 8px;
-
-  background: var(--azul);
-
-  font-size: 12px;
-  font-weight: bold;
-
-  box-shadow:
-    0 0 20px rgba(0, 124, 255, 0.6);
-}
-
-.product-image strong {
-  font-size: 38px;
-
-  line-height: 0.9;
-
-  letter-spacing: -1px;
-
-  text-shadow:
-    0 0 20px rgba(0, 148, 255, 0.6);
-}
-
-.product-image span {
-  margin-top: 10px;
-
-  color: var(--azul-claro);
-
-  font-size: 13px;
-
-  font-weight: bold;
-
-  letter-spacing: 2px;
-}
-
-
-/* INFORMAÇÕES */
-
-.product-info {
-  padding: 20px 5px 5px;
-}
-
-.product-info small {
-  color: var(--azul-claro);
-
-  font-size: 10px;
-
-  font-weight: bold;
-
-  letter-spacing: 1.2px;
-}
-
-.product-info h3 {
-  margin-top: 8px;
-
-  font-size: 24px;
-}
-
-.product-info p {
-  margin-top: 10px;
-
-  color: var(--cinza);
-
-  font-size: 14px;
-
-  line-height: 1.5;
-}
-
-
-/* PREÇO */
-
-.price {
-  margin-top: 18px;
-
-  font-size: 28px;
-
-  font-weight: 900;
-}
-
-
-/* BOTÃO */
-
-.cta {
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  width: 100%;
-
-  min-height: 56px;
-
-  margin-top: 17px;
-
-  border-radius: 15px;
-
-  background:
-    linear-gradient(
-      100deg,
-      #006cff,
-      #10b8ff
-    );
-
-  color: white;
-
-  text-decoration: none;
-
-  font-size: 14px;
-
-  font-weight: 900;
-
-  letter-spacing: 0.4px;
-
-  box-shadow:
-    0 10px 30px rgba(0, 119, 255, 0.3);
-
-  transition: 0.2s;
-}
-
-.cta:hover {
-  transform: translateY(-2px);
-
-  box-shadow:
-    0 14px 35px rgba(0, 119, 255, 0.45);
-}
-
-
-/* TEXTO FINAL */
-
-.notice {
-  margin-top: 18px;
-
-  text-align: center;
-
-  color: #69778d;
-
-  font-size: 11px;
-}
-
-
-/* CELULAR */
-
-@media (max-width: 380px) {
-
-  .page {
-    padding: 30px 14px;
-  }
-
-  .avatar {
-    width: 96px;
-    height: 96px;
-  }
-
-  .hero h2 {
-    font-size: 29px;
-  }
-
-  .product-image {
-    min-height: 205px;
-  }
-
-} .product-image {
-  width: 100%;
-  overflow: hidden;
+    width: 100%;
+    background: #101010;
 }
 
 .product-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-  border-radius: 18px;
+    width: 100%;
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================================
+   INFORMAÇÕES
+========================================= */
+
+.product-info {
+    padding: 24px 22px 26px;
+}
+
+.product-info small {
+    display: block;
+
+    color: #f5a623;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 9px;
+}
+
+.product-info h3 {
+    color: #ffffff;
+
+    font-size: 25px;
+    line-height: 1.2;
+
+    margin-bottom: 12px;
+}
+
+.product-info p {
+    color: #aaa;
+
+    font-size: 15px;
+    line-height: 1.65;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   PREÇO
+========================================= */
+
+.price {
+    color: #ffffff;
+
+    font-size: 27px;
+    font-weight: 900;
+
+    margin: 18px 0;
+}
+
+
+/* =========================================
+   BOTÃO PRINCIPAL
+========================================= */
+
+.cta {
+    display: block;
+
+    width: 100%;
+
+    padding: 15px 18px;
+
+    border-radius: 12px;
+
+    background: #f5a623;
+
+    color: #111111;
+
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 900;
+
+    transition: 0.25s ease;
+}
+
+.cta:hover {
+    background: #ffb63d;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 25px rgba(245, 166, 35, 0.20);
+}
+
+.cta:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================================
+   AVISO
+========================================= */
+
+.notice {
+    text-align: center;
+
+    color: #777;
+
+    font-size: 12px;
+
+    margin: 8px 0 28px;
+}
+
+
+/* =========================================
+   CRIAÇÃO DE SITES
+========================================= */
+
+.site-service {
+    position: relative;
+
+    background:
+        linear-gradient(
+            145deg,
+            #121212,
+            #0d0d0d
+        );
+
+    border: 1px solid rgba(245, 166, 35, 0.30);
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================================
+   IMAGEM DA CRIAÇÃO DE SITES
+========================================= */
+
+.site-service-image {
+    width: 100%;
+
+    background: #080808;
+
+    overflow: hidden;
+}
+
+.site-service-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   INFORMAÇÕES DO SERVIÇO
+========================================= */
+
+.site-service .product-info {
+    padding: 24px 22px 27px;
+}
+
+.site-service small {
+    color: #f5a623;
+}
+
+.site-service h3 {
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.site-service p {
+    color: #b0b0b0;
+}
+
+
+/* =========================================
+   BENEFÍCIOS
+========================================= */
+
+.site-benefits {
+    list-style: none;
+
+    padding: 0;
+    margin: 20px 0 5px;
+}
+
+.site-benefits li {
+    color: #e5e5e5;
+
+    font-size: 14px;
+
+    margin: 11px 0;
+
+    position: relative;
+
+    padding-left: 2px;
+}
+
+.site-benefits li::first-letter {
+    color: #f5a623;
+}
+
+
+/* =========================================
+   PREÇO DO SERVIÇO
+========================================= */
+
+.site-service .price {
+    font-size: 28px;
+
+    color: #ffffff;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================
+   BOTÃO DO SERVIÇO
+========================================= */
+
+.site-service .cta {
+    background: #f5a623;
+
+    color: #111111;
+}
+
+.site-service .cta:hover {
+    background: #ffb63d;
+}
+
+
+/* =========================================
+   EFEITO NO CARD DE SERVIÇO
+========================================= */
+
+.site-service::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    top: -100px;
+    right: -80px;
+
+    background: rgba(245, 166, 35, 0.07);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   RESPONSIVO
+========================================= */
+
+@media (max-width: 600px) {
+
+    .page {
+        padding: 28px 15px 45px;
+    }
+
+    .profile {
+        margin-bottom: 28px;
+    }
+
+    .avatar {
+        width: 86px;
+        height: 86px;
+    }
+
+    .profile h1 {
+        font-size: 22px;
+    }
+
+    .hero h2 {
+        font-size: 29px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .product-card {
+        border-radius: 18px;
+    }
+
+    .product-info {
+        padding: 22px 18px 24px;
+    }
+
+    .product-info h3 {
+        font-size: 23px;
+    }
+
+    .product-info p {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 25px;
+    }
+
+    .site-service .product-info {
+        padding: 22px 18px 25px;
+    }
+
+    .site-service h3 {
+        font-size: 24px;
+    }
+
+    .site-benefits li {
+        font-size: 14px;
+    }
+
+    .site-service .price {
+        font-size: 26px;
+    }
+}
+
+
+/* =========================================
+   CELULARES PEQUENOS
+========================================= */
+
+@media (max-width: 360px) {
+
+    .page {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .product-info h3 {
+        font-size: 22px;
+    }
+
+    .site-service h3 {
+        font-size: 23px;
+    }
 }
